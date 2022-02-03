@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Art quiz</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="initial">
+        <div class="container initial-container">
+            <div class="logo"></div>
+            <div class="category-selection">
+                <div class="category-selection-artists artists">
+                    <img src="/assets/jpg/artists/artists-quiz.jpg" alt="artists-quiz" />
+                    <p class="category-selection-title">Викторина по художникам</p>
+                </div>
+                <div class="category-selection-pictures pictures">
+                    <img src="/assets/jpg/artists/pictures-quiz.jpg" alt="pictures-quiz" />
+                    <p class="category-selection-title">Викторина по картинам</p>
+                </div>
+            </div>
+            <button class="settings-btn btn">Настройки</button>
+            <a href="https://github.com/argentybird" class="github-link" target="_blank">argentybird</a>
+            <a href="https://rs.school/js"><img src="./assets/svg/rs_school.svg" width="80" height="80" alt="logo"></a>
+        </div>
+    </section>
+    <section class="settings">
+        <div class="container settings-container">
+            <div class="settings-top">
+                <div class="logo"></div>
+                <h2 class="title">Настройки</h2>
+            </div>
+            <div class="volume">
+                <h3 class="volume-title title">Звук</h3>
+                <div class="volume-wrapper">
+                    <button class="volume-icon"></button>
+                    <input type="range" class="volume-bar" min="0" max="1" value="0.5" step="0.01" />
+                </div>
+            </div>
+            <div class="time-game">
+                <h3 class="time-game-title title">Игра на время</h3>
+                <div class="time-amount">
+                    <button class="time-amount-btn btn" onclick="this.nextElementSibling.stepDown()">−</button>
+                    <input class="time-amount-input" type="number" min="5" max="30" value="20" step="5" readonly="readonly" />
+                    <button class="time-amount-btn btn" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+                <div class="time-game-wrapper">
+                    <p class="time-game-off">Выкл</p>
+                    <div class="switch-wrapper">
+                        <label class="switch">
+                                <input class="checkbox" data-name="time" type="checkbox" id="checkBox"/>
+                                <span class="slider"></span>
+                            </label>
+                    </div>
+                    <p class="time-game-on">Вкл</p>
+                </div>
+            </div>
+            <button class="settings-btn-back btn">Назад</button>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container categories-container">
+            <div class="logo-wrapper">
+                <div class="logo"></div>
+                <h3 class="main-title">Категории</h3>
+            </div>
+            <div class="btn-wrapper">
+                <button class="categories-btn btn menuBtn">Меню</button>
+                <button class="categories-btn btn settingsBtn">Настройки</button>
+            </div>
+            <ul class="card-list">
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+                <li class="card-container">
+                    <div class="card-item">
+                        <div class="card-title">
+                            <h3 class="card-title-info"></h3>
+                            <span class="card-title-right-answers"></span>
+                        </div>
+                        <img src="./assets/jpg/artists/1.jpg" alt="card-img" class="card-img" />
+                        <div class="card-info">
+                            <p class="picture-name">Сватовство майора</p>
+                            <p class="picture-author">Павел Федотов</p>
+                            <p class="picture-year">1852</p>
+                        </div>
+                        <button class="card-score btn">Счёт</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="questions questions-artists">
+        <div class="container questions-artists-container">
+            <div class="questions-header">
+                <div class="logo"></div>
+                <div class="timer">30</div>
+                <button class="questions-btn btn">Выйти</button>
+            </div>
+            <div class="questions-artists-main">
+                <div class="questions-artists-question">Какую из этих картин написал Энрики Иглесиас?</div>
+                <ul class="dots">
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+            </div>
+            <div class="answers-artists">
+                <ul class="answers-artists-list">
+                    <li class="answers-artists-item">
+                        <p class="artist-name">Жермен Висконсин</p>
+                    </li>
+                    <li class="answers-artists-item">
+                        <p class="artist-name">Жермен Висконсин</p>
+                    </li>
+                    <li class="answers-artists-item">
+                        <p class="artist-name">Жермен Висконсин</p>
+                    </li>
+                    <li class="answers-artists-item">
+                        <p class="artist-name">Жермен Висконсин</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="questions questions-pictures">
+        <div class="container questions-pictures-container">
+            <div class="questions-header">
+                <div class="logo"></div>
+                <div class="timer">30</div>
+                <button class="questions-btn btn">Выйти</button>
+            </div>
+            <div class="questions-pictures-question">Какую из этих картин написал Энрики Иглесиас?</div>
+            <ul class="dots">
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+                <li class="dot dot-pictures"></li>
+            </ul>
+            <div class="questions-pictures-main">
+                <ul class="answers-pictures-list">
+                    <li class="answers-pictures-item">
+                        <img src="./assets/jpg/artists/1.jpg" alt="picture" class="answers-pictures-img" />
+                    </li>
+                    <li class="answers-pictures-item">
+                        <img src="./assets/jpg/artists/1.jpg" alt="picture" class="answers-pictures-img" />
+                    </li>
+                    <li class="answers-pictures-item">
+                        <img src="./assets/jpg/artists/1.jpg" alt="picture" class="answers-pictures-img" />
+                    </li>
+                    <li class="answers-pictures-item">
+                        <img src="./assets/jpg/artists/1.jpg" alt="picture" class="answers-pictures-img" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="popup">
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <div class="popup-score">5</div>
+                <img class="popup-img" src="./assets/png/result.png" alt="picture" />
+                <div class="popup-info">
+                    <p class="popup-picture-name">Весенний луг</p>
+                    <p class="popup-artist-name">Жульен Бодуа</p>
+                </div>
+                <button class="popup-btn btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
